@@ -5,11 +5,47 @@
     android:background="#DDDDDD">
 
     <TextView
-        android:text="Hi"
+        android:text="Please enter the verification code:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="161dp"
         android:id="@+id/textView" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="CANCEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:id="@+id/button3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editText2"
+        android:hint="ENTER YOUR CODE"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:maxLength="6" />
+
 </RelativeLayout>
