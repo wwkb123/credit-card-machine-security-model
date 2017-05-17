@@ -54,8 +54,8 @@ public class Pop extends Activity {
         code = (EditText) findViewById(R.id.editText2);
         Random rand = new Random();
         int a,b,c,d,e,f;
-        a = rand.nextInt(9);
-        b = rand.nextInt(9);
+        a = 7;
+        b = 3;
         c = rand.nextInt(9);
         d = rand.nextInt(9);
         e = rand.nextInt(9);
@@ -83,6 +83,7 @@ public class Pop extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Pop.this,MainActivity.class));
+                finish();
             }
         });
     }
