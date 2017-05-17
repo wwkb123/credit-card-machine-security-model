@@ -83,9 +83,11 @@ public class Pop extends Activity {
         n.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Pop.this,MainActivity.class);
-                i.setFlags(Intent.FLAG_ACTIVITY_PREVIOUS_IS_TOP);
-                startActivity(i);
+                getWindow().closeAllPanels();
+//                Intent i = new Intent(Pop.this,MainActivity.class);
+//                i.setFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+//                startActivity(i);
+                finish();
             }
         });
     }

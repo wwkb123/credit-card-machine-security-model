@@ -23,7 +23,11 @@ public class Pop_verify extends Activity {
         r.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Pop_verify.this,MainActivity.class));
+                getWindow().closeAllPanels();
+//                Intent i = new Intent(Pop.this,MainActivity.class);
+//                i.setFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+//                startActivity(i);
+                finish();
             }
         });
     }
