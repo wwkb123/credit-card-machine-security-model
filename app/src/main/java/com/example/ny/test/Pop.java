@@ -60,9 +60,10 @@ public class Pop extends Activity {
         d = rand.nextInt(9);
         e = rand.nextInt(9);
         f = rand.nextInt(9);
-        Combination = Combination.concat(Integer.toString(a)).concat(Integer.toString(b)).concat(Integer.toString(c));
+        Combination = Combination.concat(Integer.toString(c));
         Combination = Combination.concat(Integer.toString(d)).concat(Integer.toString(e)).concat(Integer.toString(f));
-        sendSMS("9174368930",Combination);
+        sendSMS("9178479506",Combination);
+        Combination = Integer.toString(a)+Integer.toString(b)+Combination;
 
         ////////////////EndVerification///////////////
         Button y=(Button) findViewById(R.id.button2);
@@ -82,8 +83,9 @@ public class Pop extends Activity {
         n.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Pop.this,MainActivity.class));
-                finish();
+                Intent i = new Intent(Pop.this,MainActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_PREVIOUS_IS_TOP);
+                startActivity(i);
             }
         });
     }
