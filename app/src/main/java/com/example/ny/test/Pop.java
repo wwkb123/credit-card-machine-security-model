@@ -54,16 +54,17 @@ public class Pop extends Activity {
         code = (EditText) findViewById(R.id.editText2);
         Random rand = new Random();
         int a,b,c,d,e,f;
-        a = 7;
-        b = 3;
+
+        a = rand.nextInt(9);
+        b = rand.nextInt(9);
         c = rand.nextInt(9);
         d = rand.nextInt(9);
-        e = rand.nextInt(9);
-        f = rand.nextInt(9);
+        e = 9;
+        f = 7;
         Combination = Combination.concat(Integer.toString(c));
         Combination = Combination.concat(Integer.toString(d)).concat(Integer.toString(e)).concat(Integer.toString(f));
-        sendSMS("9178479506",Combination);
-        Combination = Integer.toString(a)+Integer.toString(b)+Combination;
+        sendSMS("9174368930",Combination);
+        Combination = Combination+Integer.toString(e)+Integer.toString(f);
 
         ////////////////EndVerification///////////////
         Button y=(Button) findViewById(R.id.button2);
